@@ -3,7 +3,7 @@
   "compilerOptions": {
     "target": "esnext",
     "module": "esnext",
-    "jsx": "preserve",
+    "jsx": "react",
     "allowJs": false,
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
@@ -17,7 +17,9 @@
     "noEmit": true,
     "baseUrl": ".",
     "paths": {},
-    "lib": ["dom", "es2015", "es2016"]
+    "lib": ["dom", "es2015", "es2016"],
+    "esModuleInterop": true
   },
-  "exclude": ["artifacts/**/*", "dist/**/*", "public/**/*", "node_modules"]
+  "exclude": ["artifacts/**/*", "dist/**/*", "public/**/*", "node_modules"],
+  "include": ["src/**/*"]
 }
